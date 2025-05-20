@@ -1,0 +1,32 @@
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: rgba(203, 220, 235, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 5%;
+}
+
+nav ul li a {
+  font-size: 1.1rem;
+  color: var(--clr-primary-2);
+}
+
+nav ul li a:hover {
+  color: var(--clr-btn-secondary-hover);
+}

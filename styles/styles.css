@@ -1,0 +1,21 @@
+/* Base styles */
+@import url("./base/global.css");
+@import url("./base/typography.css");
+@import url("./base/variables.css");
+
+/* Layout styles */
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+@import url("./layout/grid.css");
+
+/* Section styles */
+@import url("./sections/hero.css");
+@import url("./sections/competencies.css");
+@import url("./sections/about.css");
+@import url("./sections/education.css");
+@import url("./sections/project.css");
+@import url("./sections/contact.css");
+
+/* Component styles  */
+@import url("./components/buttons.css");
+@import url("./components/cards.css");

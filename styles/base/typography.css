@@ -1,0 +1,38 @@
+/* Typography */
+.play-fair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.Open-Sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+p {
+  width: 90%;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}

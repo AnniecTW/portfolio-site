@@ -1,0 +1,194 @@
+.about {
+  background-color: var(--clr-bg-2);
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.about h2 {
+  margin-bottom: 0;
+}
+
+.about .text-1 {
+  margin: 2rem 0;
+}
+
+.eduWork-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 1rem;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.icon i {
+  color: var(--clr-primary-1);
+  transition: all 0.3s;
+  font-size: 1.5rem;
+}
+
+.icon i:hover {
+  color: white;
+  transform: translateY(-4px);
+}
+
+.eduWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.edu .card-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.edu .card-container:hover {
+  transform: translateY(-4px);
+  background-color: #fff;
+}
+
+.edu .card-container > * {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.logo {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 110px;
+  padding: 5px;
+  background-color: var(--clr-bg-2);
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.edu-card-container {
+  width: 100%;
+  flex: 8;
+}
+
+.edu-card-container > * {
+  margin: 0.2rem;
+}
+
+.school-name,
+.company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--clr-primary-1);
+  transition: transform 0.3s ease;
+}
+
+.school-name:hover,
+.company-name:hover {
+  transform: scale(1.01);
+}
+
+.degree,
+.position {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--clr-primary-2);
+  transition: transform 0.3s ease;
+}
+
+p.degree:hover,
+p.position:hover {
+  transform: scale(1.01);
+  color: var(--clr-primary-2);
+  font-weight: bold;
+}
+
+.details,
+.coursework {
+  font-size: 0.9rem;
+  color: var(--clr-text-detail);
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-2 {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro-container {
+    flex: 35%;
+    margin-top: 30px;
+  }
+
+  .about .text-1 {
+    margin: 2rem 0 4rem 0;
+  }
+
+  .eduWork-container {
+    flex: 45%;
+  }
+
+  .info-grid {
+    text-align: start;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 3rem 10%;
+  }
+
+  .icon {
+    margin: 80px 0 30px 0;
+  }
+
+  .edu .card-container {
+    width: 90%;
+    flex-direction: row;
+  }
+}

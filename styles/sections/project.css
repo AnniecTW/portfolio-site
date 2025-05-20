@@ -1,0 +1,118 @@
+.project {
+  min-height: 100vh;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+  min-height: 320px;
+  width: 100%;
+  perspective: 1000px;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.proj {
+  min-height: 360px;
+  width: 60%;
+  min-width: 300px;
+  max-width: 380px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.proj.flip {
+  transform: rotateY(180deg);
+}
+
+.proj-front,
+.proj-back {
+  height: 360px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 380px;
+  box-sizing: border-box;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-back {
+  transform: rotateY(180deg);
+}
+
+.proj-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--clr-primary-1);
+  transition: transform 0.3s ease;
+}
+
+.proj-name:hover {
+  transform: scale(1.01);
+  font-weight: bold;
+  color: var(--clr-primary-1);
+}
+
+.proj-back img {
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: solid 2px var(--clr-bg-2);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.proj-back .btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.btn-group .btn {
+  min-width: 120px;
+  border-radius: 8px;
+}
+
+.proj-decription {
+  font-size: 0.95rem;
+}
+
+.skill-used {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+  margin: 5%;
+  width: 90%;
+}
+
+.btn.more-projects:hover {
+  background-color: var(--clr-accent-2);
+}
