@@ -24,13 +24,13 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript. It s
 - Improve animations and accessibility
 - Convert to React version for better scalability
 
-## 🗂 Repo Structure
+## Repo Structure
 
-images/
-scripts/
-styles/
-index.html
-README.md
+images/<br>
+scripts/<br>
+styles/<br>
+index.html<br>
+README.md<br>
 
 ## License
 
