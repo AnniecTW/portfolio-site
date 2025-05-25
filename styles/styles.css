@@ -10,6 +10,7 @@
 
 /* Section styles */
 @import url("./sections/hero.css");
+@import url("./sections/tech.css");
 @import url("./sections/competencies.css");
 @import url("./sections/about.css");
 @import url("./sections/education.css");

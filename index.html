@@ -44,7 +44,7 @@
         <div class="specialization play-fair">
           <p>a professional<span>web developer</span></p>
         </div>
-        <p class="intro testimony">
+        <p class="intro">
           I'm passionate about building practical and meaningful full-stack
           applications. I'm actively creating AI-enhanced tools while expanding
           my expertise. I thrive on transforming innovative ideas into scalable,
@@ -62,8 +62,70 @@
           <a class="btn viewProject" href="#project">View My Projects</a>
         </div>
       </div>
-      <div class="personal_image">
-        <img src="./image/persona2_L.png" alt="personal image" />
+      <div class="character">
+        <div class="character-board">
+          <img src="./image/persona2_L.png" alt="personal image" />
+          <!-- Frontend Skills -->
+          <div class="skill-sticker frontend logo-html">
+            <img src="./image/html5-logo.png" />
+          </div>
+          <div class="skill-sticker frontend logo-css">
+            <img src="./image/css-logo.png" />
+          </div>
+          <div class="skill-sticker frontend logo-js">
+            <img src="./image/javascript-logo.png" />
+          </div>
+          <div class="skill-sticker frontend logo-react">
+            <img src="./image/react-logo.svg" />
+          </div>
+          <div class="skill-sticker frontend logo-vite">
+            <img src="./image/vite-logo.svg" />
+          </div>
+          <div class="skill-sticker frontend logo-bs">
+            <img src="./image/bootstrap-logo.svg" />
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skill-sticker backend logo-node">
+            <img src="./image/node-logo.png" />
+          </div>
+          <div class="skill-sticker backend logo-express">
+            <img src="./image/express-logo.png" />
+          </div>
+          <div class="skill-sticker backend logo-rest">
+            <img src="./image/rest-logo.png" />
+          </div>
+          <div class="skill-sticker backend logo-json">
+            <img src="./image/json-logo.svg" />
+          </div>
+
+          <!-- Tools Skills -->
+          <div class="skill-sticker tools logo-python">
+            <img src="./image/python-logo.png" />
+          </div>
+          <div class="skill-sticker tools logo-java">
+            <img src="./image/java-logo.png" />
+          </div>
+          <div class="skill-sticker tools logo-github">
+            <img src="./image/github-logo.svg" />
+          </div>
+          <div class="skill-sticker tools logo-npm">
+            <img src="./image/npm-logo.svg" />
+          </div>
+          <div class="skill-sticker tools logo-postman">
+            <img src="./image/postman-logo.png" />
+          </div>
+          <div class="skill-sticker tools logo-vscode">
+            <img src="./image/vscode-logo.svg" />
+          </div>
+        </div>
+        <div class="category-icons">
+          <span data-category="frontend" class="category-icon">Frontend</span>
+          <span data-category="backend" class="category-icon">Backend</span>
+          <span data-category="tools" class="category-icon"
+            >Tools & Language</span
+          >
+        </div>
       </div>
     </section>
     <!-- Competencies -->
@@ -154,15 +216,15 @@
               Information Science at the UIUC.
             </p>
             <div class="info-grid">
-              <div class="label">Name</div>
+              <strong>Name</strong>
               <div class="value">: Hsin-Ya (Annie) Chen</div>
-              <div class="label">Birthday</div>
+              <strong>Birthday</strong>
               <div class="value">: March 6</div>
-              <div class="label">Address</div>
+              <strong>Address</strong>
               <div class="value">: Urbana-Champaign, IL</div>
-              <div class="label">Phone Number</div>
+              <strong>Phone Number</strong>
               <div class="value">: +123 456 7890</div>
-              <div class="label">Email</div>
+              <strong>Email</strong>
               <div class="value">: annie1996306@gmail.com</div>
             </div>
             <div class="icon">
@@ -190,7 +252,7 @@
                     <img
                       height="100"
                       width="100"
-                      src="./image/uiuc-logo.PNG"
+                      src="./image/uiuc-logo.png"
                       alt="Word Cloud Analysis for OS Notes"
                     />
                   </div>
@@ -213,7 +275,7 @@
                     <img
                       height="100"
                       width="100"
-                      src="./image/ntu-logo.PNG"
+                      src="./image/ntu-logo.png"
                       alt="Word Cloud Analysis for OS Notes"
                     />
                   </div>
@@ -234,7 +296,7 @@
                     <img
                       height="100"
                       width="100"
-                      src="./image/tsmc-logo.PNG"
+                      src="./image/tsmc-logo.png"
                       alt="Word Cloud Analysis for OS Notes"
                     />
                   </div>
@@ -269,7 +331,7 @@
     <section id="project" class="project">
       <div class="container">
         <h2 class="play-fair">Projects</h2>
-        <p class="testimony">Personal projects</p>
+        <p>Personal projects</p>
         <div class="projects">
           <div class="proj">
             <div class="proj-front">
@@ -351,7 +413,13 @@
             <div class="proj-back">
               <p>You’re already here 😎</p>
               <div class="btn-group">
-                <a href="" target="_blank" class="btn"> GitHub Repo </a>
+                <a
+                  href="https://github.com/AnniecTW/Portfolio-Site.git"
+                  target="_blank"
+                  class="btn"
+                >
+                  GitHub Repo
+                </a>
               </div>
             </div>
           </div>
@@ -370,21 +438,19 @@
     <section id="contact">
       <div class="container">
         <h2 class="cont-title play-fair">Get In Touch</h2>
-        <p class="testimony">
-          Let’s build something great together. Feel free to reach out !
-        </p>
+        <p>Let’s build something great together. Feel free to reach out !</p>
         <div class="cont">
           <ul class="info">
-            <li class="icon-info">
-              <i class="fa-solid fa-envelope fa-fw"></i>
+            <li class="label-info">
+              <strong>Email</strong>
               <a href="mailto:annie1996306@gmail.com">annie1996306@gmail.com</a>
             </li>
-            <li class="icon-info">
-              <i class="fa-solid fa-phone fa-fw"></i>
+            <li class="label-info">
+              <strong>Phone</strong>
               <span class="information">+123 456 7890</span>
             </li>
-            <li class="icon-info">
-              <i class="fas fa-map-marker-alt fa-fw"></i>
+            <li class="label-info">
+              <strong>Location</strong>
               <span class="information">Urbana-Champaign, IL</span>
             </li>
           </ul>
@@ -422,7 +488,8 @@
         <p>&copy; 2025 Hsin-Ya (Annie) Chien. All rights reserved.</p>
       </div>
     </footer>
-    <script src="form.js"></script>
     <script src="flipcard.js"></script>
+    <script src="skills.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

@@ -1,0 +1,145 @@
+.category-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 50px;
+}
+
+.category-icon {
+  writing-mode: vertical-rl;
+  padding: 12px 8px;
+  background-color: var(--clr-primary-3);
+  color: white;
+  border-radius: 20px;
+  margin: 8px 0;
+  transition: transform 0.2s ease;
+}
+
+.category-icon:hover {
+  transform: scale(1.05);
+  background-color: var(--clr-primary-2);
+}
+
+.skill-sticker {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  pointer-events: none;
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px); /* like glass */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.skill-sticker.show {
+  display: block;
+  opacity: 1;
+  animation: floaty 4s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.skill-sticker img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* logo position */
+.logo-html {
+  top: 10%;
+  left: 0%;
+}
+
+.logo-css {
+  top: 5%;
+  right: 10%;
+}
+
+.logo-js {
+  top: 45%;
+  left: 5%;
+}
+
+.logo-react {
+  top: 50%;
+  right: 5%;
+}
+
+.logo-vite {
+  top: 85%;
+  right: 15%;
+}
+
+.logo-bs {
+  top: 85%;
+  left: 2%;
+}
+
+.logo-node {
+  top: 15%;
+  left: 5%;
+}
+
+.logo-express {
+  top: 80%;
+  left: 8%;
+}
+
+.logo-rest {
+  top: 3%;
+  right: 10%;
+}
+
+.logo-json {
+  top: 75%;
+  right: 10%;
+}
+
+.logo-python {
+  top: 5%;
+  left: 0%;
+}
+
+.logo-java {
+  top: 10%;
+  right: 10%;
+}
+
+.logo-postman {
+  top: 45%;
+  left: 2%;
+}
+
+.logo-npm {
+  top: 45%;
+  right: 10%;
+}
+
+.logo-github {
+  top: 85%;
+  right: 5%;
+}
+
+.logo-vscode {
+  top: 85%;
+  left: 0%;
+}

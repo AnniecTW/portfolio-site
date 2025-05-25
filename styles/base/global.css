@@ -22,7 +22,6 @@ body p {
 body p:hover,
 .value:hover {
   color: rgb(0, 0, 0);
-  font-weight: 450;
 }
 
 @media (min-width: 1024px) {
