@@ -4,7 +4,7 @@ This is my personal portfolio website built with HTML, CSS, and JavaScript. It s
 
 ## Live Demo
 
-👉 [Click here to view the website](https://anniectw.github.io/Portfolio-Site/)
+👉 [Click here to view the website](https://anniectw.github.io/portfolio-site/)
 
 ## Tech Stack
 
