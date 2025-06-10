@@ -19,7 +19,7 @@
 }
 
 .about .text-1 {
-  margin: 2rem 0;
+  margin-block: 2rem;
 }
 
 .eduWork-container {
@@ -47,7 +47,7 @@
   height: 50px;
   background-color: white;
   color: var(--clr-primary-1);
-  border-radius: 12px; /* 關鍵：讓它是「圓角方塊」 */
+  border-radius: 12px;
   font-size: 1.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -74,9 +74,8 @@
 }
 
 .edu .card-container {
-  width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transition: transform 0.2s ease;
 }
 
@@ -107,6 +106,7 @@
 .logo img {
   max-width: 100px;
   height: auto;
+  object-fit: contain;
 }
 
 .edu-card-container {

@@ -1,5 +1,4 @@
-.btn,
-button {
+.btn {
   background-color: #133e87;
   border: none;
   border-radius: 25px;
@@ -8,16 +7,20 @@ button {
   min-width: 150px;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
-  margin: 2rem 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-block: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn:hover,
-button:hover {
+.btn:hover {
   transform: scale(1.05);
   background-color: #0056b3;
   color: white;
+}
+
+.btn:focus {
+  outline: 2px solid var(--clr-accent-2);
+  outline-offset: 2px;
 }

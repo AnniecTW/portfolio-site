@@ -1,33 +1,35 @@
 :root {
   --nav-height: 50px;
 
-  /* 基礎色彩 */
-  --clr-bg-1: #f3f3e0; /* 主背景色 */
-  --clr-bg-2: #cbdceb; /* 次要背景或卡片底色 */
+  /* Basic color */
+  --clr-bg-1: #f3f3e0; /* primary */
+  --clr-bg-2: #cbdceb; /* secondary or card background */
   --clr-bg-3: #f4fcff;
-  --clr-primary-1: #133e87; /* 主色（標題、主要按鈕） */
-  --clr-primary-2: #608bc1; /* 次要色（hover、連結） */
+  --clr-primary-1: #133e87; /* titles or button */
+  --clr-primary-2: #608bc1; /* hover or links */
   --clr-primary-3: #608cc19f;
 
-  /* 文字 */
+  /* Text */
   --clr-text-heading: #133e87;
   --clr-text-body: #2c2c2c;
   --clr-text-light: #ffffff;
   --clr-text-detail: #333;
   --clr-text-strong: #2e3a59;
 
-  /* 按鈕 */
+  /* Button */
   --clr-btn-bg: #133e87;
   --clr-btn-hover: #0e2e68;
   --clr-btn-secondary: #608bc1;
   --clr-btn-secondary-hover: #4c74a4;
 
-  /* 邊框與input */
+  /* Frame and input */
   --clr-border: #b0c4de;
   --clr-input-bg: #f8f9fa;
   --clr-input-focus: #608bc1;
+  --clr-text-bg: #d9f0ff;
 
-  /* 其他強調色 */
-  --clr-accent-1: #ffb347; /* 溫暖橘色，可用於 CTA 按鈕或icon點綴 */
-  --clr-accent-2: #a3d9a5; /* 柔和綠色，適合成功訊息、tag */
+  /* Others */
+  --clr-accent-1: #ffb347; /* CTA button or icon*/
+  --clr-accent-2: #a3d9a5; /* success message or tag */
+  --clr-accent-3: #a093c7;
 }

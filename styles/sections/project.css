@@ -1,4 +1,4 @@
-.project {
+.projects-area {
   min-height: 100vh;
 }
 
@@ -22,10 +22,10 @@
   }
 }
 
-.proj {
+.project-item {
   min-height: 360px;
   width: 60%;
-  min-width: 300px;
+  min-width: 330px;
   max-width: 380px;
   flex-direction: column;
   align-items: center;
@@ -35,12 +35,12 @@
   transition: transform 0.6s;
 }
 
-.proj.flip {
+.project-item.flip {
   transform: rotateY(180deg);
 }
 
-.proj-front,
-.proj-back {
+.project-front,
+.project-back {
   height: 360px;
   width: 100%;
   min-width: 300px;
@@ -58,24 +58,21 @@
   align-items: center;
 }
 
-.proj-back {
+.project-back {
   transform: rotateY(180deg);
 }
 
-.proj-name {
-  font-size: 1.2rem;
-  font-weight: bold;
+.project-name {
   color: var(--clr-primary-1);
   transition: transform 0.3s ease;
 }
 
-.proj-name:hover {
+.project-name:hover {
   transform: scale(1.01);
-  font-weight: bold;
   color: var(--clr-primary-1);
 }
 
-.proj-back img {
+.project-back img {
   max-height: 100%;
   width: auto;
   height: auto;
@@ -88,22 +85,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.proj-back .btn-group {
+.project-back .project-cta {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-.btn-group .btn {
+.project-cta .btn {
   min-width: 120px;
   border-radius: 8px;
 }
 
-.proj-decription {
-  font-size: 0.95rem;
-}
-
-.skill-used {
+.skills-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -111,6 +104,15 @@
   gap: 5%;
   margin: 5%;
   width: 90%;
+
+  color: var(--clr-accent-3);
+}
+
+.skills-list li {
+  background-color: var(--clr-text-bg);
+  border-radius: 20px;
+  padding: 2px 8px;
+  margin: 2px;
 }
 
 .btn.more-projects:hover {

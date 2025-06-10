@@ -6,14 +6,6 @@
   font-style: normal;
 }
 
-.Open-Sans {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
 a {
   text-decoration: none;
   color: var(--primary-color);

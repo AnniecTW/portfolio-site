@@ -1,4 +1,4 @@
-.cont {
+.contact-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,8 +6,8 @@
   width: 90%;
 }
 
-.cont a,
-.cont span {
+.contact-wrapper a,
+.contact-wrapper span {
   margin: 0.3em 0;
   color: var(--clr-text-strong);
 }
@@ -29,9 +29,9 @@
 }
 
 @media (min-width: 768px) {
-  .cont {
+  .contact-wrapper {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     gap: 5%;
   }
@@ -88,6 +88,7 @@ textarea:focus {
   background-color: #ecf0ed;
   box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.4);
 }
-.message-submit {
+
+.contact-form-submit {
   margin: 20px;
 }

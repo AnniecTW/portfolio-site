@@ -1,5 +1,5 @@
 .hero {
-  min-height: 80vh;
+  min-height: 90vh;
   background-color: var(--clr-bg-2);
   display: flex;
   flex-direction: column;
@@ -35,9 +35,9 @@
 
 .name {
   font-weight: 700;
-  font-size: 3rem;
-  margin-block-start: 0.7em;
-  margin-block-end: 0.2em;
+  font-size: 2.5rem;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.1em;
   color: black;
 }
 
@@ -47,7 +47,7 @@
   }
 
   .name {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 }
 
@@ -55,10 +55,9 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.5em;
   gap: 0.75rem;
-  color: var(--clr-text-heading);
-  height: 2.5rem;
+  height: 5rem;
   position: relative;
 }
 
@@ -66,18 +65,16 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 6rem;
+  height: 5rem;
   width: 500px;
-}
-
-@media (min-width: 425px) {
-  .dynamic-text-container {
-    height: 2.5rem;
-  }
+  padding-left: 5px;
 }
 
 .dynamic-text {
   position: absolute;
+  color: var(--clr-accent-3);
+  text-shadow: 1px 1px 2px rgba(19, 62, 135, 0.5);
+  letter-spacing: 0.1rem;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   width: 100%;
@@ -95,7 +92,7 @@
 .intro {
   width: 100%;
   margin-bottom: 1.5em;
-  text-wrap: wrap;
+  overflow-wrap: break-word;
 }
 
 .learn-more {
@@ -108,7 +105,12 @@
   margin: 0.5rem 0;
 }
 
+.btn.resume {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 .btn.resume:hover {
+  transform: scale(1.05);
   background-color: var(--clr-accent-1);
 }
 
@@ -120,7 +122,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .character-board {
@@ -131,8 +133,9 @@
 }
 
 .character-board img {
-  width: 50%;
-  max-height: 70%;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
   object-fit: contain; /* keep original shape */
 }
 
@@ -141,11 +144,5 @@
     display: flex;
     flex-direction: row;
     gap: 8%;
-  }
-}
-
-@media (min-width: 768px) {
-  .character-board img {
-    width: 80%;
   }
 }

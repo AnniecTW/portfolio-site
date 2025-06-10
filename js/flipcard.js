@@ -1,4 +1,4 @@
-document.querySelectorAll(".proj").forEach((card) => {
+document.querySelectorAll(".project-item").forEach((card) => {
   let flipTimer;
 
   card.addEventListener("mouseenter", () => {

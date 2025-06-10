@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Annie's</title>
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -29,9 +28,9 @@
       <nav class="nav">
         <ul>
           <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#competencies">Competencies</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -44,7 +43,7 @@
         <div class="text-rotator play-fair">
           <span>a</span>
           <span class="dynamic-text-container">
-            <span class="dynamic-text">Professional Web Developer</span>
+            <span class="dynamic-text">Web Developer</span>
             <span class="dynamic-text">Student at UIUC</span>
             <span class="dynamic-text">Data Analyst</span>
             <span class="dynamic-text">Passionate Learner</span></span
@@ -59,13 +58,12 @@
         <div class="learn-more">
           <a
             class="btn resume"
-            href="./Resume.pdf"
+            href="./resume/Resume_Hsinya_2025.pdf"
             download="Annie_Chien_Resume.pdf"
-            class="btn"
           >
             Download CV
           </a>
-          <a class="btn viewProject" href="#project">View My Projects</a>
+          <a class="btn viewProject" href="#projects">View My Projects</a>
         </div>
       </div>
       <div class="character">
@@ -110,7 +108,7 @@
             <img src="./image/python-logo.png" />
           </div>
           <div class="skill-sticker tools logo-java">
-            <img src="./image/java-logo.png" />
+            <img src="./image/Java-logo.png" />
           </div>
           <div class="skill-sticker tools logo-github">
             <img src="./image/github-logo.svg" />
@@ -132,6 +130,110 @@
             >Tools & Language</span
           >
         </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="projects-area">
+      <div class="container">
+        <h2 class="play-fair">Projects</h2>
+        <p>A showcase of my development work.</p>
+        <div class="projects">
+          <!-- Single project flip card -->
+          <div class="project-item">
+            <div class="project-front">
+              <h3 class="project-name play-fair">Finance Tracker</h3>
+              <p class="project-description">
+                Developed a full-stack web for financial management with CRUD
+                features, including expense tracking, categorization, and
+                budgeting. Integrated AI-powered analytics.
+              </p>
+              <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="project-back">
+              <div class="project-cta">
+                <a href="" target="_blank" class="btn"> GitHub Repo </a>
+                <a
+                  href="https://weather-planner-iqhv.onrender.com"
+                  target="_blank"
+                  class="btn"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Single project flip card -->
+          <div class="project-item">
+            <div class="project-front">
+              <h3 class="project-name play-fair">Weather Planner</h3>
+              <p class="project-description">
+                Built a responsive scheduling app with 7-day forecasts and
+                personalized activity tips using the Open-Meteo API and dynamic
+                weather icons.
+              </p>
+              <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>Open-Meteo API</li>
+                <li>Express</li>
+                <li>Node.js</li>
+                <li>Axios</li>
+              </ul>
+            </div>
+            <div class="project-back">
+              <img src="./image/weather-planner.png" alt="Weather Planner" />
+              <div class="project-cta">
+                <a href="" target="_blank" class="btn"> GitHub Repo </a>
+                <a
+                  href="https://weather-planner-iqhv.onrender.com"
+                  target="_blank"
+                  class="btn"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Single project flip card -->
+          <div class="project-item">
+            <div class="project-front">
+              <h3 class="project-name play-fair">Personal Website</h3>
+              <p class="project-description">
+                Designed and developed a fully responsive personal portfolio
+                site to showcase projects, experience, and skills. Emphasized
+                clean UI and subtle animations for better user engagement.
+              </p>
+              <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project-back">
+              <p>You’re already here 😎</p>
+              <div class="project-cta">
+                <a
+                  href="https://github.com/AnniecTW/Portfolio-Site.git"
+                  target="_blank"
+                  class="btn"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/AnniecTW?tab=repositories"
+          class="btn more-projects"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          More Projects
+        </a>
       </div>
     </section>
     <!-- Competencies -->
@@ -158,8 +260,7 @@
             <p class="context">
               Developed scalable web applications with modern frameworks,
               integrating front-end, back-end, and database systems. Designed
-              efficient APIs and user-friendly interfaces to enhance usability
-              and performance.
+              user-friendly interfaces to enhance usability and performance.
             </p>
           </div>
           <div class="skill card-container">
@@ -223,13 +324,13 @@
             </p>
             <div class="info-grid">
               <strong>Name</strong>
-              <div class="value">: Hsin-Ya (Annie) Chen</div>
+              <div class="value">: Hsin-Ya (Annie) Chien</div>
               <strong>Birthday</strong>
               <div class="value">: March 6</div>
               <strong>Address</strong>
               <div class="value">: Urbana-Champaign, IL</div>
               <strong>Phone Number</strong>
-              <div class="value">: +123 456 7890</div>
+              <div class="value">: 217-418-3333</div>
               <strong>Email</strong>
               <div class="value">: annie1996306@gmail.com</div>
             </div>
@@ -316,9 +417,10 @@
                     </p>
                     <p class="details">
                       Drove process optimization projects in advanced
-                      semiconductor manufacturing, resulting in a 10% yield
-                      improvement. Collaborated with R&D to integrate new
-                      technologies into production, reducing defect rate by 15%.
+                      semiconductor manufacturing, resulting in approximately
+                      10% yield improvement. Collaborated with R&D to integrate
+                      new technologies into production, reducing scrap rate by
+                      30%+.
                     </p>
                   </div>
                 </div>
@@ -333,143 +435,54 @@
         </div>
       </div>
     </section>
-    <!-- Projects -->
-    <section id="project" class="project">
-      <div class="container">
-        <h2 class="play-fair">Projects</h2>
-        <p>Personal projects</p>
-        <div class="projects">
-          <div class="proj">
-            <div class="proj-front">
-              <p class="proj-name play-fair">Finance Tracker</p>
-              <p class="proj-decription">
-                Developed a full-stack web for financial management with CRUD
-                features, including expense tracking, categorization, and
-                budgeting. Integrated AI-powered analytics.
-              </p>
-              <div class="skill-used">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>React</div>
-                <div>Node.js</div>
-                <div>Express</div>
-                <div>MongoDB</div>
-              </div>
-            </div>
-            <div class="proj-back">
-              <img src="" alt="Finance Tracker" />
-              <div class="btn-group">
-                <a href="" target="_blank" class="btn"> GitHub Repo </a>
-                <a
-                  href="https://weather-planner-iqhv.onrender.com"
-                  target="_blank"
-                  class="btn"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="proj">
-            <div class="proj-front">
-              <p class="proj-name play-fair">Weather Planner</p>
-              <p class="proj-decription">
-                Built a weather-based scheduling app that provides 7-day
-                forecasts and personalized activity suggestions using Open-Meteo
-                API. Features responsive design and dynamic weather icons.
-              </p>
-              <div class="skill-used">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>Open-Meteo API</div>
-                <div>Express</div>
-                <div>Node.js</div>
-                <div>Axios</div>
-              </div>
-            </div>
-            <div class="proj-back">
-              <img src="./image/weather-planner.png" alt="Weather Planner" />
-              <div class="btn-group">
-                <a href="" target="_blank" class="btn"> GitHub Repo </a>
-                <a
-                  href="https://weather-planner-iqhv.onrender.com"
-                  target="_blank"
-                  class="btn"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="proj">
-            <div class="proj-front">
-              <p class="proj-name play-fair">Personal Website</p>
-              <p class="proj-decription">
-                Designed and developed a fully responsive personal portfolio
-                site from scratch to showcase projects, experience, and skills.
-                Emphasized clean UI and subtle animations for better user
-                engagement.
-              </p>
-              <div class="skill-used">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-              </div>
-            </div>
-            <div class="proj-back">
-              <p>You’re already here 😎</p>
-              <div class="btn-group">
-                <a
-                  href="https://github.com/AnniecTW/Portfolio-Site.git"
-                  target="_blank"
-                  class="btn"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a
-          href="https://github.com/AnniecTW?tab=repositories"
-          class="btn more-projects"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          More Projects
-        </a>
-      </div>
-    </section>
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <h2 class="cont-title play-fair">Get In Touch</h2>
-        <p>Let’s build something great together. Feel free to reach out !</p>
-        <div class="cont">
-          <ul class="info">
-            <li class="label-info">
-              <strong>Email</strong>
-              <a href="mailto:annie1996306@gmail.com">annie1996306@gmail.com</a>
-            </li>
-            <li class="label-info">
-              <strong>Phone</strong>
-              <span class="information">+123 456 7890</span>
-            </li>
-            <li class="label-info">
-              <strong>Location</strong>
-              <span class="information">Urbana-Champaign, IL</span>
-            </li>
-          </ul>
+        <h2 class="play-fair">Get In Touch</h2>
+        <p>
+          Creating together is where the magic happens. Feel free to reach out!
+        </p>
+        <div class="contact-wrapper">
+          <address>
+            <ul class="info">
+              <li class="label-info">
+                <strong>Email</strong>
+                <a href="mailto:annie1996306@gmail.com"
+                  >annie1996306@gmail.com</a
+                >
+              </li>
+              <li class="label-info">
+                <strong>Phone</strong>
+                <span class="information">217-418-3333</span>
+              </li>
+              <li class="label-info">
+                <strong>Location</strong>
+                <span class="information">Urbana-Champaign, IL</span>
+              </li>
+            </ul>
+          </address>
           <form id="contact-form" class="message">
-            <input type="text" name="name" placeholder="Your name" required />
-            <input type="text" name="email" placeholder="Your email" required />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+              autocomplete="name"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Your email"
+              required
+              autocomplete="email"
+            />
             <textarea
               type="text"
               name="message"
               placeholder="Your message"
               required
             ></textarea>
-            <button type="submit" class="message-submit">Send</button>
+            <button type="submit" class="btn contact-form-submit">Send</button>
             <p id="form-status"></p>
           </form>
         </div>
@@ -494,9 +507,9 @@
         <p>&copy; 2025 Hsin-Ya (Annie) Chien. All rights reserved.</p>
       </div>
     </footer>
-    <script src="text-rotator.js"></script>
-    <script src="skills.js"></script>
-    <script src="flipcard.js"></script>
-    <script src="form.js"></script>
+    <script src="./js/text-rotator.js"></script>
+    <script src="./js/skills.js"></script>
+    <script src="./js/flipcard.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

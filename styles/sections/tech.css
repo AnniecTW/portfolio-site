@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-right: 50px;
+  padding: 0 2%;
+}
+
+@media (min-width: 768px) {
+  .category-icons {
+    margin-right: 50px;
+  }
 }
 
 .category-icon {

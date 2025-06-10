@@ -2,11 +2,33 @@
   min-height: 550px;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 100px;
+  min-height: 360px;
+  justify-content: space-evenly;
+}
+
 .skill.card-container {
   align-items: flex-start;
   padding: 2rem;
   gap: 1rem;
   box-shadow: none;
+  width: 60%;
+  min-width: 330px;
+  max-width: 380px;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
 }
 
 .skill.card-container > * {
@@ -24,25 +46,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 100px;
-}
-
-@media (min-width: 768px) {
-  .skills {
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
-
 .skill {
-  flex: 0 1 27%;
   transition: all 0.3s ease;
 }
 
@@ -64,9 +68,9 @@
 }
 
 .skills .context {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--clr-text-detail);
   text-align: left;
-  text-wrap: wrap;
+  overflow-wrap: break-word;
   width: 100%;
 }

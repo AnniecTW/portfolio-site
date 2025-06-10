@@ -1,7 +1,7 @@
 const icons = document.querySelectorAll(".category-icon");
 const stickers = document.querySelectorAll(".skill-sticker");
 
-let currentCategory = "frontend"; // 預設顯示 Frontend
+let currentCategory = "frontend";
 
 function showCategory(category) {
   stickers.forEach((sticker) => {
@@ -12,7 +12,7 @@ function showCategory(category) {
   });
 }
 
-// 初始顯示預設類別
+// default display Frontend part
 showCategory(currentCategory);
 
 icons.forEach((icon) => {
@@ -21,8 +21,8 @@ icons.forEach((icon) => {
     showCategory(cat);
   });
 
-  //   如果想要在 hover 之後「記住」目前類別，可以加這個：
-  icon.addEventListener("click", () => {
+  // keep current category
+  icon.addEventListener("mouseleave", () => {
     currentCategory = icon.dataset.category;
   });
 });
